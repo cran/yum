@@ -1,0 +1,45 @@
+bla bla bal
+gs
+g
+gsgshshhsf
+
+---
+justifier:
+  -
+    id: decision1
+    project-id: wim
+    name: list finalization study recruitment
+    date: 2018-09-12
+    actors: ['Kok, Gerjo', 'Peters, Louk', 'Crutzen, Rik', 'Peters, Gjalt-Jorn']
+    description: We decided to blablabla
+    alternatives: ['only invite people we know', 'cast a wide net']
+    choice: 2
+    justification: more inclusive
+    specifications:
+---
+
+en nog eentje
+En nog eentje
+
+---
+justifier:
+  -
+    id: decision2
+    project-id: wim
+    name: do list finalization study
+    date: 2018-09-12
+    actors: ['Kok, Gerjo', 'Peters, Louk', 'Crutzen, Rik', 'Peters, Gjalt-Jorn']
+    description: We decided to blablabla
+    alternatives: ['no', 'yes']
+    choice: 2
+    justification: more thorough
+    specifications:
+---
+
+gddggd
+gdgd
+gddgd
+
+
+dggd
+
