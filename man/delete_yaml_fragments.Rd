@@ -4,8 +4,13 @@
 \alias{delete_yaml_fragments}
 \title{Delete all YAML fragments from a file}
 \usage{
-delete_yaml_fragments(file, text, delimiterRegEx = "^---$",
-  ignoreOddDelimiters = FALSE, silent = TRUE)
+delete_yaml_fragments(
+  file,
+  text,
+  delimiterRegEx = "^---$",
+  ignoreOddDelimiters = FALSE,
+  silent = TRUE
+)
 }
 \arguments{
 \item{file}{The path to a file to scan; if provided, takes precedence

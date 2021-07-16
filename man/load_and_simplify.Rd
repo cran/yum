@@ -5,14 +5,29 @@
 \alias{load_and_simplify_dir}
 \title{Load YAML fragments in one or multiple files and simplify them}
 \usage{
-load_and_simplify(text, file, yamlFragments = NULL, select = ".*",
-  simplify = ".*", delimiterRegEx = "^---$",
-  ignoreOddDelimiters = FALSE, encoding = "UTF-8", silent = TRUE)
+load_and_simplify(
+  text,
+  file,
+  yamlFragments = NULL,
+  select = ".*",
+  simplify = ".*",
+  delimiterRegEx = "^---$",
+  ignoreOddDelimiters = FALSE,
+  encoding = "UTF-8",
+  silent = TRUE
+)
 
-load_and_simplify_dir(path, recursive = TRUE,
-  fileRegexes = c("^[^\\\\.]+.*$"), select = ".*", simplify = ".*",
-  delimiterRegEx = "^---$", ignoreOddDelimiters = FALSE,
-  encoding = "UTF-8", silent = TRUE)
+load_and_simplify_dir(
+  path,
+  recursive = TRUE,
+  fileRegexes = c("^[^\\\\.]+.*$"),
+  select = ".*",
+  simplify = ".*",
+  delimiterRegEx = "^---$",
+  ignoreOddDelimiters = FALSE,
+  encoding = "UTF-8",
+  silent = TRUE
+)
 }
 \arguments{
 \item{text}{As \code{text} or \code{file}, you can specify a \code{file} to read with
@@ -23,7 +38,7 @@ does not point to an existing file, an error is produced (useful if calling
 from other functions). A \code{text} should be a character vector where every
 element is a line of the original source (like provided by \code{\link[base:readLines]{base::readLines()}});
 although if a character vector of one element \emph{and} including at least one
-newline character (\code{\\n}) is provided as \code{text}, it is split at the newline
+newline character (\verb{\\\\n}) is provided as \code{text}, it is split at the newline
 characters using \code{\link[base:strsplit]{base::strsplit()}}. Basically, this behavior means that the
 first argument can be either a character vector or the path to a file; and if
 you're specifying a file and you want to be certain that an error is thrown if
@@ -37,7 +52,7 @@ does not point to an existing file, an error is produced (useful if calling
 from other functions). A \code{text} should be a character vector where every
 element is a line of the original source (like provided by \code{\link[base:readLines]{base::readLines()}});
 although if a character vector of one element \emph{and} including at least one
-newline character (\code{\\n}) is provided as \code{text}, it is split at the newline
+newline character (\verb{\\\\n}) is provided as \code{text}, it is split at the newline
 characters using \code{\link[base:strsplit]{base::strsplit()}}. Basically, this behavior means that the
 first argument can be either a character vector or the path to a file; and if
 you're specifying a file and you want to be certain that an error is thrown if
@@ -50,7 +65,7 @@ either \code{yamlFragments} (which, if specified, takes precedence over \code{fi
 and \code{text}), \code{file}, or \code{text} (\code{file} takes precedence over \code{text}).}
 
 \item{select}{A vector of regular expressions specifying object names
-to retain. The default (\code{.*}) matches everything, so by default, all
+to retain. The default (\verb{.*}) matches everything, so by default, all
 objects are retained.}
 
 \item{simplify}{A regular expression specifying which elements to
@@ -75,7 +90,7 @@ or not (\code{FALSE}).}
 
 \item{fileRegexes}{A vector of regular expressions to match the files
 against: only files matching one or more regular expressions in this
-vector are processed. The default regex (\code{^[^\.]+.*$}) matches all
+vector are processed. The default regex (\verb{^[^\\.]+.*$}) matches all
 files except those that start with a period (\code{.}).}
 }
 \value{

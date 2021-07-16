@@ -4,9 +4,16 @@
 \alias{load_yaml_dir}
 \title{Load all YAML fragments from all files in a directory}
 \usage{
-load_yaml_dir(path, recursive = TRUE, fileRegexes = c("^[^\\\\.]+.*$"),
-  select = ".*", delimiterRegEx = "^---$",
-  ignoreOddDelimiters = FALSE, encoding = "UTF-8", silent = TRUE)
+load_yaml_dir(
+  path,
+  recursive = TRUE,
+  fileRegexes = c("^[^\\\\.]+.*$"),
+  select = ".*",
+  delimiterRegEx = "^---$",
+  ignoreOddDelimiters = FALSE,
+  encoding = "UTF-8",
+  silent = TRUE
+)
 }
 \arguments{
 \item{path}{The path containing the files.}
@@ -16,11 +23,11 @@ or not (\code{FALSE}).}
 
 \item{fileRegexes}{A vector of regular expressions to match the files
 against: only files matching one or more regular expressions in this
-vector are processed. The default regex (\code{^[^\.]+.*$}) matches all
+vector are processed. The default regex (\verb{^[^\\.]+.*$}) matches all
 files except those that start with a period (\code{.}).}
 
 \item{select}{A vector of regular expressions specifying object names
-to retain. The default (\code{.*}) matches everything, so by default, all
+to retain. The default (\verb{.*}) matches everything, so by default, all
 objects are retained.}
 
 \item{delimiterRegEx}{The regular expression used to locate YAML

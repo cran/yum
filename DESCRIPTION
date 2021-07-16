@@ -1,6 +1,6 @@
 Package: yum
 Title: Utilities to Extract and Process 'YAML' Fragments
-Version: 0.0.1
+Version: 0.1.0
 Authors@R: 
     person(given = "Gjalt-Jorn",
            family = "Peters",
@@ -20,15 +20,14 @@ Description: Provides a number of functions to facilitate
 License: GPL-3
 Encoding: UTF-8
 URL: https://r-packages.gitlab.io/yum
-BugReports: https://gitlab.com/r-packages/yum/issues
-LazyData: true
-RoxygenNote: 6.1.1
+BugReports: https://gitlab.com/r-packages/yum/-/issues
+RoxygenNote: 7.1.1
 Depends: R (>= 3.0.0)
 Imports: yaml (>= 2.2)
 Suggests: covr, data.tree (>= 0.7), here, testthat
 NeedsCompilation: no
-Packaged: 2019-03-10 12:57:16 UTC; gjalt
+Packaged: 2021-07-16 18:56:40 UTC; micro
 Author: Gjalt-Jorn Peters [aut, cre]
 Maintainer: Gjalt-Jorn Peters <gjalt-jorn@userfriendlyscience.com>
 Repository: CRAN
-Date/Publication: 2019-03-13 12:30:03 UTC
+Date/Publication: 2021-07-16 19:20:03 UTC

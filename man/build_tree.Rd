@@ -4,9 +4,16 @@
 \alias{build_tree}
 \title{Convert the objects loaded from YAML fragments into a tree}
 \usage{
-build_tree(x, idName = "id", parentIdName = "parentId",
-  childrenName = "children", autofill = c(label = "id"),
-  rankdir = "LR", directed = "false", silent = TRUE)
+build_tree(
+  x,
+  idName = "id",
+  parentIdName = "parentId",
+  childrenName = "children",
+  autofill = c(label = "id"),
+  rankdir = "LR",
+  directed = "false",
+  silent = TRUE
+)
 }
 \arguments{
 \item{x}{Either a list of YAML fragments loaded from a file with

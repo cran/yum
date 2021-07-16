@@ -4,9 +4,15 @@
 \alias{load_yaml_list}
 \title{Load all YAML fragments from all character vectors in a list}
 \usage{
-load_yaml_list(x, recursive = TRUE, select = ".*",
-  delimiterRegEx = "^---$", ignoreOddDelimiters = FALSE,
-  encoding = "UTF-8", silent = TRUE)
+load_yaml_list(
+  x,
+  recursive = TRUE,
+  select = ".*",
+  delimiterRegEx = "^---$",
+  ignoreOddDelimiters = FALSE,
+  encoding = "UTF-8",
+  silent = TRUE
+)
 }
 \arguments{
 \item{x}{The list containing the character vectors.}
@@ -15,7 +21,7 @@ load_yaml_list(x, recursive = TRUE, select = ".*",
 or not (\code{FALSE}).}
 
 \item{select}{A vector of regular expressions specifying object names
-to retain. The default (\code{.*}) matches everything, so by default, all
+to retain. The default (\verb{.*}) matches everything, so by default, all
 objects are retained.}
 
 \item{delimiterRegEx}{The regular expression used to locate YAML
